@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templating Engine - fddl Documentation</title>
+    
+    <meta name="description" content="How to build and customize your own views.">
+    
+    <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body class="docs-page">
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/">fddl</a></h1><span class="reading-time">4 min read</span>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/blog/">Blog</a>
+                
+                <a href="/projects/">Projects</a>
+                
+                <a href="/docs/">Docs</a>
+                
+                <a href="/features-demo.html">Features Demo</a>
+                
+                <a href="/about.html">About</a>
+                
+                <a href="/contact.html">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="docs-layout container">
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <h3>Documentation</h3>
+                <ul>
+                    
+                </ul>
+            </nav>
+
+            <div class="sidebar-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/docs/">Documentation Home</a></li>
+                    <li><a href="/docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="/docs/configuration.html">Configuration</a></li>
+                    <li><a href="/docs/templates.html">Templates</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="docs-content">
+            <article class="doc">
+                <header class="doc-header">
+                    <h1>Templating Engine</h1>
+                    
+                    <p class="lead">How to build and customize your own views.</p>
+                    
+                </header>
+
+                <div class="doc-body">
+                    <h1>Templating Engine</h1>
+<p>The <code>fddl</code> engine uses a custom-built, logic-light templating syntax inspired by Handlebars.</p>
+<h2>Variable Substitution</h2>
+<p>Variables are wrapped in double curly braces: <code></code>.</p>
+<h3>Page Variables (<code>page.</code>)</h3>
+<ul>
+<li><p><code>Templating Engine</code>: Page title from frontmatter or filename.</p>
+</li>
+<li><p><code><h1>Templating Engine</h1>
+<p>The <code>fddl</code> engine uses a custom-built, logic-light templating syntax inspired by Handlebars.</p>
+<h2>Variable Substitution</h2>
+<p>Variables are wrapped in double curly braces: <code>{{variable}}</code>.</p>
+<h3>Page Variables (<code>page.</code>)</h3>
+<ul>
+<li><p><code>{{page.title}}</code>: Page title from frontmatter or filename.</p>
+</li>
+<li><p><code>{{page.content}}</code>: The rendered HTML of the page.</p>
+</li>
+<li><p><code>{{page.description}}</code>: Meta description from frontmatter.</p>
+</li>
+<li><p><code>{{page.date}}</code>: Formatted date (if provided in frontmatter).</p>
+</li>
+<li><p><code>{{page.url}}</code>: The relative URL path.</p>
+</li>
+<li><p><code>{{page.tags}}</code>: An array of tags assigned to the page.</p>
+</li>
+</ul>
+<h3>Site Global Variables (<code>site.</code>)</h3>
+<ul>
+<li><p><code>{{site.name}}</code>: The site name from <code>template.yml</code>.</p>
+</li>
+<li><p><code>{{site.buildID}}</code>: Unique ID for the current build.</p>
+</li>
+<li><p><code>{{site.commitHash}}</code>: Current Git commit hash.</p>
+</li>
+<li><p><code>{{site.generatedDate}}</code>: Human-readable build timestamp.</p>
+</li>
+<li><p><code>{{site.pages}}</code>: List of all processed pages.</p>
+</li>
+<li><p><code>{{site.navigation}}</code>: Array of <code>{label, url}</code> objects.</p>
+</li>
+<li><p><code>{{site.recentPosts}}</code>: The 5 most recent posts by date.</p>
+</li>
+<li><p><code>{{site.allTags}}</code>: Every unique tag used across the site.</p>
+</li>
+</ul>
+<h2>Filters</h2>
+<p>Transform values by piping them to a filter: <code>{{page.title | uppercase}}</code>.</p>
+<ul>
+<li><p><code>| uppercase</code>: CONVERT TO ALL CAPS.</p>
+</li>
+<li><p><code>| lowercase</code>: convert to all lowercase.</p>
+</li>
+<li><p><code>| capitalize</code>: Capitalize The First Letter Of Each Word.</p>
+</li>
+<li><p><code>| formatDate</code>: Format date strings based on system locale.</p>
+</li>
+</ul>
+<h2>Logic Blocks</h2>
+<h3>Each Loop</h3>
+<p>Iterate over collections:</p>
+<pre><code class="language-html">&lt;ul&gt;
+  {{#each site.recentPosts}}
+  &lt;li&gt;&lt;a href=&quot;{{this.url}}&quot;&gt;{{this.title}}&lt;/a&gt;&lt;/li&gt;
+  {{/each}}
+&lt;/ul&gt;
+</code></pre>
+<h3>If Conditional</h3>
+<p>Conditional rendering:</p>
+<pre><code class="language-html">{{#if page.author}}
+&lt;span&gt;By {{page.author}}&lt;/span&gt;
+{{/if}}
+</code></pre>
+<h2>Shortcodes</h2>
+<p><code>fddl</code> supports Hugo-style shortcodes for advanced content like YouTube embeds, alerts, and retro effects. See the <a href="/docs/shortcodes.html">Shortcodes Reference</a> for more.</p>
+<h2>Available Templates</h2>
+<p>fddl includes 13 pre-built templates with distinct themes and use cases. Choose a template when generating your site:</p>
+<pre><code class="language-bash">fddl generate --template=minimal
+</code></pre>
+<h3>Professional Templates</h3>
+<h4>Default (GeoCities)</h4>
+<p>The original fddl template with a retro 90s GeoCities aesthetic. Features bright colors, playful design elements, and nostalgic vibes.</p>
+<p><strong>Use cases:</strong> Fun personal sites, creative portfolios, nostalgic projects</p>
+<h4>Minimal</h4>
+<p>Ultra-clean minimalist design with generous whitespace and typography focus. Black and white with system fonts for maximum clarity.</p>
+<p><strong>Color palette:</strong> Black (#000000), Gray (#666666), White (#ffffff) <strong>Use cases:</strong> Personal portfolios, professional blogs, simple documentation</p>
+<h4>Blog</h4>
+<p>Blog-focused layout with reading-optimized typography (Georgia serif) and prominent sidebar. Classic blog aesthetic with emphasis on content.</p>
+<p><strong>Color palette:</strong> Navy (#2c3e50), Blue (#3498db), Light gray background <strong>Use cases:</strong> Content-heavy blogs, article sites, writing portfolios</p>
+<h4>Docs</h4>
+<p>Technical documentation theme with strong left-sidebar navigation and code focus. Clean, professional appearance optimized for technical content.</p>
+<p><strong>Color palette:</strong> Blue (#0066cc), Light gray background (#f8f9fa) <strong>Use cases:</strong> Technical documentation, API references, guides, tutorials</p>
+<h4>Magazine</h4>
+<p>News/magazine style with bold headings (Oswald font), serif body text, and support for multi-column layouts.</p>
+<p><strong>Color palette:</strong> Red (#c0392b), Merriweather serif font <strong>Use cases:</strong> News sites, content aggregation, online magazines</p>
+<h3>Design Variety Templates</h3>
+<h4>Brutalist</h4>
+<p>Bold brutalist web design with raw HTML aesthetics, stark contrasts, monospace fonts, and thick black borders. Intentionally unpolished and confrontational.</p>
+<p><strong>Color palette:</strong> Black/White with Red (#ff0000) and Yellow (#ffff00) accents <strong>Use cases:</strong> Artistic portfolios, experimental sites, statement pieces</p>
+<h4>Neon</h4>
+<p>Cyberpunk neon aesthetic with glowing text effects on dark background. Terminal-style fonts with bright neon accents.</p>
+<p><strong>Color palette:</strong> Neon green (#00ff00), Magenta (#ff00ff), Cyan (#00ffff) on black <strong>Use cases:</strong> Tech blogs, gaming sites, cyberpunk-themed projects</p>
+<h4>Vintage</h4>
+<p>Vintage newspaper/print style with serif fonts and aged paper colors. Classic typography with warm, nostalgic tones.</p>
+<p><strong>Color palette:</strong> Brown (#3d2817), Tan (#c19a6b), Cream background (#f4e8d0) <strong>Use cases:</strong> Literary sites, vintage aesthetics, historical content</p>
+<h4>Nature</h4>
+<p>Nature-inspired with earth tones, organic design elements, and rounded corners. Calm, peaceful aesthetic.</p>
+<p><strong>Color palette:</strong> Forest green (#2d5016), Olive (#6b8e23), Beige background (#f5f5dc) <strong>Use cases:</strong> Environmental blogs, outdoor content, wellness sites</p>
+<h3>Era-Inspired Templates</h3>
+<h4>Retro 80s</h4>
+<p>1980s computer aesthetic with CRT terminal colors, bitmap fonts, and neon grid background. Pure nostalgia.</p>
+<p><strong>Color palette:</strong> Hot pink (#ff1493), Cyan (#00ffff), Yellow (#ffff00) on purple-black <strong>Use cases:</strong> Retro computing, nostalgia projects, vaporwave aesthetics</p>
+<h4>Y2K</h4>
+<p>Y2K/early 2000s style with gradients, bubble effects, Comic Sans, and metallic touches. Peak early internet vibes.</p>
+<p><strong>Color palette:</strong> Hot pink (#ff69b4), Purple (#9370db), Sky blue (#00bfff), pastel backgrounds <strong>Use cases:</strong> Nostalgic sites, creative portfolios, fun personal pages</p>
+<h4>Web 2.0</h4>
+<p>Web 2.0 style with glossy buttons, subtle reflections, and rounded corners. Professional 2000s-era design.</p>
+<p><strong>Color palette:</strong> Blue (#4a90e2), Gray (#7f8c8d), Green accent (#27ae60) <strong>Use cases:</strong> Business sites, SaaS landing pages, professional blogs</p>
+<h4>Glass</h4>
+<p>Modern glassmorphism with frosted glass effects, backdrop filters, soft shadows, and blur. Contemporary and elegant.</p>
+<p><strong>Color palette:</strong> Purple gradient (#667eea to #764ba2 to #f093fb), transparent overlays <strong>Use cases:</strong> Modern portfolios, contemporary design showcases, creative agencies</p>
+<h2>Template Customization</h2>
+<p>Each template includes:</p>
+<ul>
+<li><p><strong>template.yml</strong> - Theme configuration (colors, fonts, spacing)</p>
+</li>
+<li><p><strong>html.yml</strong> - Output format configuration</p>
+</li>
+<li><p><strong>views/</strong> - HTML template files for different layouts</p>
+</li>
+<li><p><strong>assets/css/theme.css</strong> - Stylesheet with theme variables</p>
+</li>
+<li><p><strong>assets/javascript/theme.js</strong> - Interactive features</p>
+</li>
+</ul>
+<p>To customize a template:</p>
+<ol>
+<li><p>Copy a template directory: <code>cp -r templates/minimal templates/my-theme</code></p>
+</li>
+<li><p>Edit <code>template.yml</code> to change colors, fonts, and settings</p>
+</li>
+<li><p>Modify <code>assets/css/theme.css</code> for styling changes</p>
+</li>
+<li><p>Update view files in <code>views/</code> for structure changes</p>
+</li>
+<li><p>Use your custom template: <code>fddl generate --template=my-theme</code></p>
+</li>
+</ol>
+</code>: The rendered HTML of the page.</p>
+</li>
+<li><p><code>How to build and customize your own views.</code>: Meta description from frontmatter.</p>
+</li>
+<li><p><code></code>: Formatted date (if provided in frontmatter).</p>
+</li>
+<li><p><code>/docs/templates.html</code>: The relative URL path.</p>
+</li>
+<li><p><code></code>: An array of tags assigned to the page.</p>
+</li>
+</ul>
+<h3>Site Global Variables (<code>site.</code>)</h3>
+<ul>
+<li><p><code>fddl</code>: The site name from <code>template.yml</code>.</p>
+</li>
+<li><p><code>805007B8-F201-45FC-8E1A-057A88AFA31E</code>: Unique ID for the current build.</p>
+</li>
+<li><p><code>1709cb6</code>: Current Git commit hash.</p>
+</li>
+<li><p><code>Jan 17, 2026 at 11:21 PM</code>: Human-readable build timestamp.</p>
+</li>
+<li><p><code></code>: List of all processed pages.</p>
+</li>
+<li><p><code></code>: Array of <code>{label, url}</code> objects.</p>
+</li>
+<li><p><code></code>: The 5 most recent posts by date.</p>
+</li>
+<li><p><code></code>: Every unique tag used across the site.</p>
+</li>
+</ul>
+<h2>Filters</h2>
+<p>Transform values by piping them to a filter: <code>TEMPLATING ENGINE</code>.</p>
+<ul>
+<li><p><code>| uppercase</code>: CONVERT TO ALL CAPS.</p>
+</li>
+<li><p><code>| lowercase</code>: convert to all lowercase.</p>
+</li>
+<li><p><code>| capitalize</code>: Capitalize The First Letter Of Each Word.</p>
+</li>
+<li><p><code>| formatDate</code>: Format date strings based on system locale.</p>
+</li>
+</ul>
+<h2>Logic Blocks</h2>
+<h3>Each Loop</h3>
+<p>Iterate over collections:</p>
+<pre><code class="language-html">&lt;ul&gt;
+  
+  &lt;li&gt;&lt;a href=&quot;/projects/fddl.html&quot;&gt;fddl&lt;/a&gt;&lt;/li&gt;
+  
+  &lt;li&gt;&lt;a href=&quot;/blog/swift-powered-generation.html&quot;&gt;Swift-Powered Site Generation: The Technical Foundation&lt;/a&gt;&lt;/li&gt;
+  
+  &lt;li&gt;&lt;a href=&quot;/blog/features-and-capabilities.html&quot;&gt;fddl Features: Shortcodes, Plugins, and More&lt;/a&gt;&lt;/li&gt;
+  
+  &lt;li&gt;&lt;a href=&quot;/blog/introducing-fddl.html&quot;&gt;Introducing fddl: A Swift-Powered Static Site Generator&lt;/a&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+</code></pre>
+<h3>If Conditional</h3>
+<p>Conditional rendering:</p>
+<pre><code class="language-html">
+</code></pre>
+<h2>Shortcodes</h2>
+<p><code>fddl</code> supports Hugo-style shortcodes for advanced content like YouTube embeds, alerts, and retro effects. See the <a href="/docs/shortcodes.html">Shortcodes Reference</a> for more.</p>
+<h2>Available Templates</h2>
+<p>fddl includes 13 pre-built templates with distinct themes and use cases. Choose a template when generating your site:</p>
+<pre><code class="language-bash">fddl generate --template=minimal
+</code></pre>
+<h3>Professional Templates</h3>
+<h4>Default (GeoCities)</h4>
+<p>The original fddl template with a retro 90s GeoCities aesthetic. Features bright colors, playful design elements, and nostalgic vibes.</p>
+<p><strong>Use cases:</strong> Fun personal sites, creative portfolios, nostalgic projects</p>
+<h4>Minimal</h4>
+<p>Ultra-clean minimalist design with generous whitespace and typography focus. Black and white with system fonts for maximum clarity.</p>
+<p><strong>Color palette:</strong> Black (#000000), Gray (#666666), White (#ffffff) <strong>Use cases:</strong> Personal portfolios, professional blogs, simple documentation</p>
+<h4>Blog</h4>
+<p>Blog-focused layout with reading-optimized typography (Georgia serif) and prominent sidebar. Classic blog aesthetic with emphasis on content.</p>
+<p><strong>Color palette:</strong> Navy (#2c3e50), Blue (#3498db), Light gray background <strong>Use cases:</strong> Content-heavy blogs, article sites, writing portfolios</p>
+<h4>Docs</h4>
+<p>Technical documentation theme with strong left-sidebar navigation and code focus. Clean, professional appearance optimized for technical content.</p>
+<p><strong>Color palette:</strong> Blue (#0066cc), Light gray background (#f8f9fa) <strong>Use cases:</strong> Technical documentation, API references, guides, tutorials</p>
+<h4>Magazine</h4>
+<p>News/magazine style with bold headings (Oswald font), serif body text, and support for multi-column layouts.</p>
+<p><strong>Color palette:</strong> Red (#c0392b), Merriweather serif font <strong>Use cases:</strong> News sites, content aggregation, online magazines</p>
+<h3>Design Variety Templates</h3>
+<h4>Brutalist</h4>
+<p>Bold brutalist web design with raw HTML aesthetics, stark contrasts, monospace fonts, and thick black borders. Intentionally unpolished and confrontational.</p>
+<p><strong>Color palette:</strong> Black/White with Red (#ff0000) and Yellow (#ffff00) accents <strong>Use cases:</strong> Artistic portfolios, experimental sites, statement pieces</p>
+<h4>Neon</h4>
+<p>Cyberpunk neon aesthetic with glowing text effects on dark background. Terminal-style fonts with bright neon accents.</p>
+<p><strong>Color palette:</strong> Neon green (#00ff00), Magenta (#ff00ff), Cyan (#00ffff) on black <strong>Use cases:</strong> Tech blogs, gaming sites, cyberpunk-themed projects</p>
+<h4>Vintage</h4>
+<p>Vintage newspaper/print style with serif fonts and aged paper colors. Classic typography with warm, nostalgic tones.</p>
+<p><strong>Color palette:</strong> Brown (#3d2817), Tan (#c19a6b), Cream background (#f4e8d0) <strong>Use cases:</strong> Literary sites, vintage aesthetics, historical content</p>
+<h4>Nature</h4>
+<p>Nature-inspired with earth tones, organic design elements, and rounded corners. Calm, peaceful aesthetic.</p>
+<p><strong>Color palette:</strong> Forest green (#2d5016), Olive (#6b8e23), Beige background (#f5f5dc) <strong>Use cases:</strong> Environmental blogs, outdoor content, wellness sites</p>
+<h3>Era-Inspired Templates</h3>
+<h4>Retro 80s</h4>
+<p>1980s computer aesthetic with CRT terminal colors, bitmap fonts, and neon grid background. Pure nostalgia.</p>
+<p><strong>Color palette:</strong> Hot pink (#ff1493), Cyan (#00ffff), Yellow (#ffff00) on purple-black <strong>Use cases:</strong> Retro computing, nostalgia projects, vaporwave aesthetics</p>
+<h4>Y2K</h4>
+<p>Y2K/early 2000s style with gradients, bubble effects, Comic Sans, and metallic touches. Peak early internet vibes.</p>
+<p><strong>Color palette:</strong> Hot pink (#ff69b4), Purple (#9370db), Sky blue (#00bfff), pastel backgrounds <strong>Use cases:</strong> Nostalgic sites, creative portfolios, fun personal pages</p>
+<h4>Web 2.0</h4>
+<p>Web 2.0 style with glossy buttons, subtle reflections, and rounded corners. Professional 2000s-era design.</p>
+<p><strong>Color palette:</strong> Blue (#4a90e2), Gray (#7f8c8d), Green accent (#27ae60) <strong>Use cases:</strong> Business sites, SaaS landing pages, professional blogs</p>
+<h4>Glass</h4>
+<p>Modern glassmorphism with frosted glass effects, backdrop filters, soft shadows, and blur. Contemporary and elegant.</p>
+<p><strong>Color palette:</strong> Purple gradient (#667eea to #764ba2 to #f093fb), transparent overlays <strong>Use cases:</strong> Modern portfolios, contemporary design showcases, creative agencies</p>
+<h2>Template Customization</h2>
+<p>Each template includes:</p>
+<ul>
+<li><p><strong>template.yml</strong> - Theme configuration (colors, fonts, spacing)</p>
+</li>
+<li><p><strong>html.yml</strong> - Output format configuration</p>
+</li>
+<li><p><strong>views/</strong> - HTML template files for different layouts</p>
+</li>
+<li><p><strong>assets/css/theme.css</strong> - Stylesheet with theme variables</p>
+</li>
+<li><p><strong>assets/javascript/theme.js</strong> - Interactive features</p>
+</li>
+</ul>
+<p>To customize a template:</p>
+<ol>
+<li><p>Copy a template directory: <code>cp -r templates/minimal templates/my-theme</code></p>
+</li>
+<li><p>Edit <code>template.yml</code> to change colors, fonts, and settings</p>
+</li>
+<li><p>Modify <code>assets/css/theme.css</code> for styling changes</p>
+</li>
+<li><p>Update view files in <code>views/</code> for structure changes</p>
+</li>
+<li><p>Use your custom template: <code>fddl generate --template=my-theme</code></p>
+</li>
+</ol>
+
+                </div>
+
+                <footer class="doc-footer">
+                    
+                    <div class="doc-tags">
+                        <strong>Topics:</strong>
+                        
+                        <span class="tag">doc</span>
+                        
+                        <span class="tag">templates</span>
+                        
+                        <span class="tag">advanced</span>
+                        
+                    </div>
+                    
+
+                    <div class="doc-nav-links">
+                        <a href="/docs/" class="back-link">← Documentation Home</a>
+                    </div>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 fddl.</p>
+            <p>Generated by fddl build <a href="https://github.com/aviatorcards/fddl/commit/1709cb6">805007B8-F201-45FC-8E1A-057A88AFA31E</a></p>
+        </div>
+    </footer>
+</body>
+</html>

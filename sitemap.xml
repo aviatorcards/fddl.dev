@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+    <loc>https://example.com/about.html</loc>
+    <lastmod>2026-01-18T04:03:29Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/blog/features-and-capabilities.html</loc>
+    <lastmod>2026-01-18T04:02:51Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/blog/introducing-fddl.html</loc>
+    <lastmod>2026-01-18T04:02:57Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/blog/swift-powered-generation.html</loc>
+    <lastmod>2026-01-18T04:03:02Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/contact.html</loc>
+    <lastmod>2026-01-18T04:03:37Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/docs/configuration.html</loc>
+    <lastmod>2026-01-18T04:03:10Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/docs/getting-started.html</loc>
+    <lastmod>2026-01-18T04:03:14Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/docs/shortcodes.html</loc>
+    <lastmod>2026-01-18T04:03:19Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/docs/templates.html</loc>
+    <lastmod>2026-01-18T04:03:24Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/features-demo.html</loc>
+    <lastmod>2026-01-18T04:00:23Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/index.html</loc>
+    <lastmod>2026-01-18T00:02:15Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/projects/atmosphere.html</loc>
+    <lastmod>2026-01-18T04:21:19Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/projects/fddl.html</loc>
+    <lastmod>2026-01-18T04:20:18Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/projects/github.html</loc>
+    <lastmod>2026-01-18T04:00:41Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/projects/rookery.html</loc>
+    <lastmod>2026-01-18T04:02:45Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/projects/swiftmark.html</loc>
+    <lastmod>2026-01-18T04:02:39Z</lastmod>
+</url>
+</urlset>

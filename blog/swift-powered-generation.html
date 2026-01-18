@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift-Powered Site Generation: The Technical Foundation - fddl</title>
+    
+    <meta name="description" content="Exploring why Swift is an excellent choice for building a static site generator and the key dependencies that power fddl.">
+    
+    <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body class="post-layout">
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/">fddl</a></h1><span class="reading-time">4 min read</span>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/blog/">Blog</a>
+                
+                <a href="/projects/">Projects</a>
+                
+                <a href="/docs/">Docs</a>
+                
+                <a href="/features-demo.html">Features Demo</a>
+                
+                <a href="/about.html">About</a>
+                
+                <a href="/contact.html">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-area">
+            <article class="post">
+                <header class="post-header">
+                    <h1>Swift-Powered Site Generation: The Technical Foundation</h1>
+                    <p class="post-date">Dec 28, 2024</p>
+                </header>
+                <div class="post-content">
+                    <h1>Swift-Powered Site Generation</h1>
+<p>When most people think of Swift, they think of iOS apps. But Swift is a powerful, general-purpose language that excels at building developer tools, CLI applications, and—as fddl demonstrates—static site generators.</p>
+<h2>Why Swift for a Static Site Generator?</h2>
+<h3>1. Blazing Performance</h3>
+<p>Swift is a compiled language with performance comparable to C++. For a static site generator that might process thousands of markdown files, this matters. While the difference might be negligible for a small blog, it becomes significant when generating large documentation sites or content-heavy projects.</p>
+<pre><code class="language-swift"><span style="color: #6a9955;">//</span> <span style="color: #6a9955;">Swift&#39;s</span> <span style="color: #6a9955;">type</span> <span style="color: #6a9955;">system</span> <span style="color: #6a9955;">and</span> <span style="color: #6a9955;">compiler</span> <span style="color: #6a9955;">optimizations</span>
+<span style="color: #6a9955;">//</span> <span style="color: #6a9955;">make</span> <span style="color: #6a9955;">operations</span> <span style="color: #6a9955;">like</span> <span style="color: #6a9955;">this</span> <span style="color: #6a9955;">incredibly</span> <span style="color: #6a9955;">fast</span>
+<span style="color: #c586c0;">let</span> pages = <span style="color: #c586c0;">try</span> markdownFiles.<span style="color: #dcdcaa;">map</span> { file <span style="color: #c586c0;">in</span>
+    <span style="color: #c586c0;">try</span> processor.<span style="color: #dcdcaa;">process</span>(file)
+}
+</code></pre>
+<h3>2. Type Safety and Reliability</h3>
+<p>Swift’s strong type system catches errors at compile time, not when your users are trying to build their sites. Optional handling, type inference, and Swift’s emphasis on safety mean fewer runtime crashes and more predictable behavior.</p>
+<pre><code class="language-swift"><span style="color: #c586c0;">struct</span> Page {
+    <span style="color: #c586c0;">let</span> title: <span style="color: #4ec9b0;">String</span>
+    <span style="color: #c586c0;">let</span> content: <span style="color: #4ec9b0;">String</span>
+    <span style="color: #c586c0;">let</span> metadata: [<span style="color: #4ec9b0;">String</span>: <span style="color: #4ec9b0;">Any</span>]?  <span style="color: #6a9955;">//</span> <span style="color: #6a9955;">Optional,</span> <span style="color: #6a9955;">safely</span> <span style="color: #6a9955;">handled</span>
+}
+</code></pre>
+<h3>3. Modern Language Features</h3>
+<p>Swift brings modern programming paradigms to systems-level performance:</p>
+<ul>
+<li><p><strong>Optionals</strong>: No more null pointer exceptions</p>
+</li>
+<li><p><strong>Generics</strong>: Write reusable, type-safe code</p>
+</li>
+<li><p><strong>Protocol-Oriented Programming</strong>: Flexible, composable architectures</p>
+</li>
+<li><p><strong>Value Types</strong>: Safer concurrent code with structs</p>
+</li>
+<li><p><strong>Error Handling</strong>: Explicit, type-safe error propagation</p>
+</li>
+</ul>
+<h3>4. Excellent Tooling</h3>
+<p>The Swift Package Manager (SPM) makes dependency management straightforward. No separate build tools, no complex configuration—just a clean <code>Package.swift</code> file.</p>
+<h2>The Dependencies That Power fddl</h2>
+<p>fddl stands on the shoulders of excellent Swift packages:</p>
+<h3>ArgumentParser</h3>
+<p>Apple’s <code>swift-argument-parser</code> makes building CLI tools a breeze:</p>
+<pre><code class="language-swift"><span style="color: #c586c0;">import</span> ArgumentParser
+
+<span style="color: #c586c0;">struct</span> Generate: <span style="color: #4ec9b0;">ParsableCommand</span> {
+    <span style="color: #c586c0;">@Flag</span>(help: <span style="color: #b5cea8;">&quot;Enable</span> <span style="color: #b5cea8;">verbose</span> <span style="color: #b5cea8;">output&quot;</span>)
+    <span style="color: #c586c0;">var</span> verbose = <span style="color: #c586c0;">false</span>
+
+    <span style="color: #c586c0;">func</span> run() <span style="color: #c586c0;">throws</span> {
+        <span style="color: #6a9955;">//</span> <span style="color: #6a9955;">Your</span> <span style="color: #6a9955;">generation</span> <span style="color: #6a9955;">logic</span> <span style="color: #6a9955;">here</span>
+    }
+}
+</code></pre>
+<p>Clean, declarative, and type-safe command-line interfaces with automatic help generation.</p>
+<h3>Yams</h3>
+<p>YAML parsing for frontmatter and configuration files:</p>
+<pre><code class="language-swift"><span style="color: #c586c0;">import</span> Yams
+
+<span style="color: #c586c0;">let</span> frontmatter = <span style="color: #c586c0;">try</span> <span style="color: #4ec9b0;">Yams</span>.<span style="color: #dcdcaa;">load</span>(yaml: yamlString)
+</code></pre>
+<p>Essential for reading the metadata in markdown files and template configurations.</p>
+<h3>swift-markdown</h3>
+<p>Apple’s official markdown parser provides robust, standards-compliant markdown processing:</p>
+<pre><code class="language-swift"><span style="color: #c586c0;">import</span> Markdown
+
+<span style="color: #c586c0;">let</span> document = <span style="color: #4ec9b0;">Document</span>(parsing: markdownContent)
+<span style="color: #6a9955;">//</span> <span style="color: #6a9955;">Process</span> <span style="color: #6a9955;">and</span> <span style="color: #6a9955;">transform</span> <span style="color: #6a9955;">the</span> <span style="color: #6a9955;">markdown</span> <span style="color: #6a9955;">AST</span>
+</code></pre>
+<p>This gives fddl fine-grained control over markdown rendering and enables custom transformations.</p>
+<h3>Splash</h3>
+<p>Syntax highlighting for code blocks, created by John Sundell:</p>
+<pre><code class="language-swift"><span style="color: #c586c0;">import</span> Splash
+
+<span style="color: #c586c0;">let</span> highlighter = <span style="color: #4ec9b0;">SyntaxHighlighter</span>(format: <span style="color: #4ec9b0;">HTMLOutputFormat</span>())
+<span style="color: #c586c0;">let</span> html = highlighter.<span style="color: #dcdcaa;">highlight</span>(code)
+</code></pre>
+<p>This is what makes code examples in fddl-generated sites look beautiful.</p>
+<h3>SwiftNIO</h3>
+<p>For the development server with hot reload capabilities:</p>
+<pre><code class="language-swift"><span style="color: #c586c0;">import</span> NIOCore
+<span style="color: #c586c0;">import</span> NIOHTTP1
+<span style="color: #c586c0;">import</span> NIOWebSocket
+
+<span style="color: #6a9955;">//</span> <span style="color: #6a9955;">Build</span> <span style="color: #6a9955;">a</span> <span style="color: #6a9955;">high-performance</span> <span style="color: #6a9955;">HTTP</span> <span style="color: #6a9955;">server</span> <span style="color: #6a9955;">with</span> <span style="color: #6a9955;">WebSocket</span> <span style="color: #6a9955;">support</span>
+</code></pre>
+<p>SwiftNIO provides the foundation for fddl’s dev server, enabling features like live reload and file watching.</p>
+<h2>The Architecture</h2>
+<p>fddl is organized into focused modules:</p>
+<ul>
+<li><p><strong>Commands</strong>: CLI command implementations</p>
+</li>
+<li><p><strong>Core</strong>: Site generation engine</p>
+</li>
+<li><p><strong>Markdown</strong>: Markdown processing and shortcode handling</p>
+</li>
+<li><p><strong>Templates</strong>: Template rendering system</p>
+</li>
+<li><p><strong>Plugins</strong>: Extensible plugin architecture</p>
+</li>
+<li><p><strong>DevServer</strong>: Development server with hot reload</p>
+</li>
+<li><p><strong>FileSystem</strong>: File operations and asset management</p>
+</li>
+</ul>
+<p>Each module has a clear responsibility, making the codebase maintainable and extensible.</p>
+<h2>Performance in Practice</h2>
+<p>Thanks to Swift’s performance characteristics, fddl can:</p>
+<ul>
+<li><p>Generate thousands of pages in milliseconds</p>
+</li>
+<li><p>Process markdown with minimal overhead</p>
+</li>
+<li><p>Handle concurrent file operations safely</p>
+</li>
+<li><p>Serve development previews with low latency</p>
+</li>
+</ul>
+<h2>The Swift Ecosystem Advantage</h2>
+<p>By choosing Swift, fddl benefits from:</p>
+<ul>
+<li><p><strong>Active Development</strong>: Swift continues to evolve with new features</p>
+</li>
+<li><p><strong>Strong Community</strong>: Growing beyond just iOS development</p>
+</li>
+<li><p><strong>Cross-Platform</strong>: Works on macOS, Linux, and (experimentally) Windows</p>
+</li>
+<li><p><strong>Professional Tooling</strong>: Xcode, LSP support, excellent debugging</p>
+</li>
+</ul>
+<h2>Is Swift Right for Your CLI Tool?</h2>
+<p>If you’re building developer tools and you value:</p>
+<ul>
+<li><p>Compile-time safety over scripting flexibility</p>
+</li>
+<li><p>High performance without manual memory management</p>
+</li>
+<li><p>Modern language features with systems-level control</p>
+</li>
+<li><p>A growing ecosystem of quality packages</p>
+</li>
+</ul>
+<p>Then Swift might be the perfect choice.</p>
+<h2>What’s Next?</h2>
+<p>In our next post, we’ll explore fddl’s features in detail—from shortcodes and plugins to the template system and dev server.</p>
+<blockquote>
+<p>“Swift is not just for apps. It’s for anything you want to build.” — The fddl philosophy</p>
+</blockquote>
+<p><strong>Built with fddl</strong> - Powered by Swift, driven by curiosity.</p>
+
+                </div>
+                <footer class="post-footer">
+                    <div class="tags">
+                        <strong>Tags:</strong>
+                        
+                        <a href="/tags/swift.html">swift</a>
+                        
+                        <a href="/tags/architecture.html">architecture</a>
+                        
+                        <a href="/tags/dependencies.html">dependencies</a>
+                        
+                        <a href="/tags/performance.html">performance</a>
+                        
+                    </div>
+                </footer>
+            </article>
+        </div>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <ul class="recent-posts">
+                    
+                    <li><a href="/projects/fddl.html">fddl</a></li>
+                    
+                    <li><a href="/blog/swift-powered-generation.html">Swift-Powered Site Generation: The Technical Foundation</a></li>
+                    
+                    <li><a href="/blog/features-and-capabilities.html">fddl Features: Shortcodes, Plugins, and More</a></li>
+                    
+                    <li><a href="/blog/introducing-fddl.html">Introducing fddl: A Swift-Powered Static Site Generator</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Tags</h3>
+                <div class="tag-cloud">
+                    
+                    <a href="/tags/about.html" class="tag">about</a>
+                    
+                    <a href="/tags/advanced.html" class="tag">advanced</a>
+                    
+                    <a href="/tags/architecture.html" class="tag">architecture</a>
+                    
+                    <a href="/tags/configuration.html" class="tag">configuration</a>
+                    
+                    <a href="/tags/contact.html" class="tag">contact</a>
+                    
+                    <a href="/tags/demo.html" class="tag">demo</a>
+                    
+                    <a href="/tags/dependencies.html" class="tag">dependencies</a>
+                    
+                    <a href="/tags/doc.html" class="tag">doc</a>
+                    
+                    <a href="/tags/fddl.html" class="tag">fddl</a>
+                    
+                    <a href="/tags/features.html" class="tag">features</a>
+                    
+                    <a href="/tags/geocities.html" class="tag">geocities</a>
+                    
+                    <a href="/tags/introduction.html" class="tag">introduction</a>
+                    
+                    <a href="/tags/learning.html" class="tag">learning</a>
+                    
+                    <a href="/tags/markdown.html" class="tag">markdown</a>
+                    
+                    <a href="/tags/open-source.html" class="tag">open-source</a>
+                    
+                    <a href="/tags/parsing.html" class="tag">parsing</a>
+                    
+                    <a href="/tags/performance.html" class="tag">performance</a>
+                    
+                    <a href="/tags/philosophy.html" class="tag">philosophy</a>
+                    
+                    <a href="/tags/plugins.html" class="tag">plugins</a>
+                    
+                    <a href="/tags/projects.html" class="tag">projects</a>
+                    
+                    <a href="/tags/shortcodes.html" class="tag">shortcodes</a>
+                    
+                    <a href="/tags/social.html" class="tag">social</a>
+                    
+                    <a href="/tags/static-sites.html" class="tag">static-sites</a>
+                    
+                    <a href="/tags/swift.html" class="tag">swift</a>
+                    
+                    <a href="/tags/templates.html" class="tag">templates</a>
+                    
+                    <a href="/tags/text-editor.html" class="tag">text-editor</a>
+                    
+                    <a href="/tags/tutorial.html" class="tag">tutorial</a>
+                    
+                    <a href="/tags/vapor.html" class="tag">vapor</a>
+                    
+                    <a href="/tags/web-application.html" class="tag">web-application</a>
+                    
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 fddl.</p>
+            <p>Generated by fddl build <a href="https://github.com/aviatorcards/fddl/commit/1709cb6">805007B8-F201-45FC-8E1A-057A88AFA31E</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/javascript/theme.js"></script>
+</body>
+</html>

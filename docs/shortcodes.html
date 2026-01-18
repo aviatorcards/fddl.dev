@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcodes Reference - fddl Documentation</title>
+    
+    <meta name="description" content="Enhance your markdown with dynamic shortcodes.">
+    
+    <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body class="docs-page">
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/">fddl</a></h1><span class="reading-time">1 min read</span>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/blog/">Blog</a>
+                
+                <a href="/projects/">Projects</a>
+                
+                <a href="/docs/">Docs</a>
+                
+                <a href="/features-demo.html">Features Demo</a>
+                
+                <a href="/about.html">About</a>
+                
+                <a href="/contact.html">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="docs-layout container">
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <h3>Documentation</h3>
+                <ul>
+                    
+                </ul>
+            </nav>
+
+            <div class="sidebar-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/docs/">Documentation Home</a></li>
+                    <li><a href="/docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="/docs/configuration.html">Configuration</a></li>
+                    <li><a href="/docs/templates.html">Templates</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="docs-content">
+            <article class="doc">
+                <header class="doc-header">
+                    <h1>Shortcodes Reference</h1>
+                    
+                    <p class="lead">Enhance your markdown with dynamic shortcodes.</p>
+                    
+                </header>
+
+                <div class="doc-body">
+                    <h1>Shortcodes</h1>
+<p><code>fddl</code> supports shortcodes to add dynamic or complex HTML content to your markdown files without writing HTML.</p>
+<h2>Basic Syntax</h2>
+<p>Shortcodes are wrapped in <code></code> tags.</p>
+<ul>
+<li><p><strong>Paired</strong>: <code>content</code></p>
+</li>
+<li><p><strong>Self-closing</strong>: <code></code> or <code></code></p>
+</li>
+</ul>
+<h2>Available Shortcodes</h2>
+<h3>YouTube</h3>
+<p>Embed a YouTube video.</p>
+<pre><code class="language-markdown"><div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</code></pre>
+<ul>
+<li><p><code>id</code>: The YouTube video ID.</p>
+</li>
+<li><p><code>width</code>: (Optional) Width in pixels.</p>
+</li>
+<li><p><code>height</code>: (Optional) Height in pixels.</p>
+</li>
+</ul>
+<h3>Image</h3>
+<p>Display an image with an optional caption.</p>
+<pre><code class="language-markdown"><figure style="text-align: center;"><img src="/assets/images/photo.jpg" alt="" /><figcaption>A beautiful sunset</figcaption></figure>
+</code></pre>
+<ul>
+<li><p><code>src</code>: Image URL.</p>
+</li>
+<li><p><code>caption</code>: (Optional) Text to display underneath.</p>
+</li>
+<li><p><code>alt</code>: (Optional) Alt text.</p>
+</li>
+<li><p><code>width</code>: (Optional) Width in pixels.</p>
+</li>
+<li><p><code>align</code>: (Optional) Text alignment (<code>left</code>, <code>center</code>, <code>right</code>).</p>
+</li>
+</ul>
+<h3>Alert</h3>
+<p>Create a styled callout box.</p>
+<pre><code class="language-markdown"><div class="alert alert-warning" style="padding: 1rem; margin: 1rem 0; background: #fff3cd; color: #856404; border-left: 4px solid #856404; border-radius: 4px;"><strong style="display: block; margin-bottom: 0.5rem;">⚠️ Heads up!</strong>
+This is an important message.
+</div>
+</code></pre>
+<ul>
+<li><p><code>type</code>: <code>info</code> (default), <code>warning</code>, <code>error</code>, <code>success</code>.</p>
+</li>
+<li><p><code>title</code>: (Optional) Bold title.</p>
+</li>
+</ul>
+<h3>Counter (Retro)</h3>
+<p>A classic GeoCities-style visitor counter!</p>
+<pre><code class="language-markdown"><div class="visitor-counter" style="font-family: 'Courier New', monospace; background: #000; color: #0f0; padding: 0.5rem; display: inline-block; border: 2px solid #0f0;">VISITORS: 44912</div>
+</code></pre>
+<ul>
+<li><p><code>style</code>: <code>digital</code> (default) or <code>hidden</code>.</p>
+</li>
+</ul>
+<h3>Blink (Retro)</h3>
+<p>Make text blink like it’s 1996.</p>
+<pre><code class="language-markdown"><span class="blink-text" style="animation: blink 1s linear infinite;">ATTENTION!</span><style>@keyframes blink { 50% { opacity: 0; } }</style>
+</code></pre>
+<h3>Marquee (Retro)</h3>
+<p>Scroll text across the screen.</p>
+<pre><code class="language-markdown"><marquee direction="left" scrollamount="10">
+Welcome to my website!
+</marquee>
+</code></pre>
+<ul>
+<li><p><code>direction</code>: <code>left</code>, <code>right</code>, <code>up</code>, <code>down</code>.</p>
+</li>
+<li><p><code>speed</code>: <code>slow</code>, <code>normal</code>, <code>fast</code>.</p>
+</li>
+</ul>
+<h3>Rainbow (Retro)</h3>
+<p>Make your text colorful.</p>
+<pre><code class="language-markdown"><span style="color: #ff0000;">T</span><span style="color: #ff7f00;">h</span><span style="color: #ffff00;">i</span><span style="color: #00ff00;">s</span><span style="color: #0000ff;"> </span><span style="color: #4b0082;">i</span><span style="color: #9400d3;">s</span><span style="color: #ff0000;"> </span><span style="color: #ff7f00;">F</span><span style="color: #ffff00;">A</span><span style="color: #00ff00;">B</span><span style="color: #0000ff;">U</span><span style="color: #4b0082;">L</span><span style="color: #9400d3;">O</span><span style="color: #ff0000;">U</span><span style="color: #ff7f00;">S</span><span style="color: #ffff00;">!</span>
+</code></pre>
+
+                </div>
+
+                <footer class="doc-footer">
+                    
+                    <div class="doc-tags">
+                        <strong>Topics:</strong>
+                        
+                        <span class="tag">doc</span>
+                        
+                        <span class="tag">shortcodes</span>
+                        
+                        <span class="tag">advanced</span>
+                        
+                    </div>
+                    
+
+                    <div class="doc-nav-links">
+                        <a href="/docs/" class="back-link">← Documentation Home</a>
+                    </div>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 fddl.</p>
+            <p>Generated by fddl build <a href="https://github.com/aviatorcards/fddl/commit/1709cb6">805007B8-F201-45FC-8E1A-057A88AFA31E</a></p>
+        </div>
+    </footer>
+</body>
+</html>

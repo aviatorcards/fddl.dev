@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Reference - fddl Documentation</title>
+    
+    <meta name="description" content="Master the settings that drive your site generation.">
+    
+    <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body class="docs-page">
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/">fddl</a></h1><span class="reading-time">1 min read</span>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/blog/">Blog</a>
+                
+                <a href="/projects/">Projects</a>
+                
+                <a href="/docs/">Docs</a>
+                
+                <a href="/features-demo.html">Features Demo</a>
+                
+                <a href="/about.html">About</a>
+                
+                <a href="/contact.html">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="docs-layout container">
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <h3>Documentation</h3>
+                <ul>
+                    
+                </ul>
+            </nav>
+
+            <div class="sidebar-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/docs/">Documentation Home</a></li>
+                    <li><a href="/docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="/docs/configuration.html">Configuration</a></li>
+                    <li><a href="/docs/templates.html">Templates</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="docs-content">
+            <article class="doc">
+                <header class="doc-header">
+                    <h1>Configuration Reference</h1>
+                    
+                    <p class="lead">Master the settings that drive your site generation.</p>
+                    
+                </header>
+
+                <div class="doc-body">
+                    <h1>Configuration</h1>
+<p><code>fddl</code> is designed to be “zero-config” by default, but it offers deep customization via YAML files.</p>
+<h2>YAML Frontmatter</h2>
+<p>Every markdown file in <code>contents/</code> can include a YAML header blocked by <code>---</code>.</p>
+<pre><code class="language-yaml">---
+title: &quot;My Page&quot;
+date: 2024-03-25
+layout: post
+tags: [&quot;tag1&quot;, &quot;tag2&quot;]
+---
+</code></pre>
+<h2>Template Configuration (<code>template.yml</code>)</h2>
+<p>The <code>template.yml</code> file in your template directory defines the site’s structure and behavior.</p>
+<h3>Navigation</h3>
+<p>The <code>navigation</code> key defines the menu items for your site.</p>
+<pre><code class="language-yaml">navigation:
+  - label: &quot;Home&quot;
+    url: &quot;/&quot;
+  - label: &quot;About&quot;
+    url: &quot;/about.html&quot;
+</code></pre>
+<h3>Theme</h3>
+<p><code>fddl</code> supports a CSS-variable-based theme system.</p>
+<pre><code class="language-yaml">theme:
+  name: &quot;custom&quot;
+  colors:
+    primary: &quot;#ff00ff&quot;
+    background: &quot;#000080&quot;
+    text: &quot;#ffffff&quot;
+  typography:
+    font_family: &quot;Comic Sans MS, cursive&quot;
+    base_font_size: &quot;16px&quot;
+</code></pre>
+<h3>Plugins</h3>
+<p>Plugins extend the build process.</p>
+<pre><code class="language-yaml">plugins:
+  - identifier: &quot;sitemap&quot;
+    enabled: true
+    options:
+      base_url: &quot;https://example.com&quot;
+  - identifier: &quot;rss&quot;
+    enabled: true
+    options:
+      site_title: &quot;My Feed&quot;
+      limit: &quot;10&quot;
+  - identifier: &quot;search&quot;
+    enabled: true
+</code></pre>
+<h2>Global Variables</h2>
+<p>You can access site-wide variables using the <code></code> namespace in your templates:</p>
+<ul>
+<li><p><code>fddl</code>: The name defined in your configuration.</p>
+</li>
+<li><p><code>805007B8-F201-45FC-8E1A-057A88AFA31E</code>: The current build’s unique identifier.</p>
+</li>
+<li><p><code>1709cb6</code>: The short git hash of the current commit.</p>
+</li>
+<li><p><code>Jan 17, 2026 at 11:21 PM</code>: The timestamp of when the build completed.</p>
+</li>
+<li><p><code></code>: Array of navigation items.</p>
+</li>
+<li><p><code></code>: The 5 latest pages with a date.</p>
+</li>
+<li><p><code></code>: List of every tag used in the site.</p>
+</li>
+</ul>
+
+                </div>
+
+                <footer class="doc-footer">
+                    
+                    <div class="doc-tags">
+                        <strong>Topics:</strong>
+                        
+                        <span class="tag">doc</span>
+                        
+                        <span class="tag">configuration</span>
+                        
+                        <span class="tag">tutorial</span>
+                        
+                    </div>
+                    
+
+                    <div class="doc-nav-links">
+                        <a href="/docs/" class="back-link">← Documentation Home</a>
+                    </div>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 fddl.</p>
+            <p>Generated by fddl build <a href="https://github.com/aviatorcards/fddl/commit/1709cb6">805007B8-F201-45FC-8E1A-057A88AFA31E</a></p>
+        </div>
+    </footer>
+</body>
+</html>

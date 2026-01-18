@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with fddl - fddl Documentation</title>
+    
+    <meta name="description" content="From zero to deployed in under five minutes.">
+    
+    <link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body class="docs-page">
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="/">fddl</a></h1><span class="reading-time">1 min read</span>
+            <nav class="main-nav">
+                
+                <a href="/">Home</a>
+                
+                <a href="/blog/">Blog</a>
+                
+                <a href="/projects/">Projects</a>
+                
+                <a href="/docs/">Docs</a>
+                
+                <a href="/features-demo.html">Features Demo</a>
+                
+                <a href="/about.html">About</a>
+                
+                <a href="/contact.html">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <div class="docs-layout container">
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <h3>Documentation</h3>
+                <ul>
+                    
+                </ul>
+            </nav>
+
+            <div class="sidebar-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/docs/">Documentation Home</a></li>
+                    <li><a href="/docs/getting-started.html">Getting Started</a></li>
+                    <li><a href="/docs/configuration.html">Configuration</a></li>
+                    <li><a href="/docs/templates.html">Templates</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="docs-content">
+            <article class="doc">
+                <header class="doc-header">
+                    <h1>Getting Started with fddl</h1>
+                    
+                    <p class="lead">From zero to deployed in under five minutes.</p>
+                    
+                </header>
+
+                <div class="doc-body">
+                    <h1>Getting Started</h1>
+<p>Welcome to the documentation for <strong>fddl</strong>. This guide will help you set up your first static site.</p>
+<h2>Installation</h2>
+<p>Currently, <code>fddl</code> is distributed as a Swift package. You can build it from source:</p>
+<pre><code class="language-bash">git clone https://github.com/aviatorcards/fddl.git
+cd fddl
+swift build -c release
+</code></pre>
+<p>The executable will be located in <code>.build/release/fddl</code>.</p>
+<h2>Project Structure</h2>
+<p>A typical <code>fddl</code> project looks like this:</p>
+<ul>
+<li><p><code>contents/</code>: Your markdown files.</p>
+</li>
+<li><p><code>templates/</code>: Your HTML views and configurations.</p>
+</li>
+<li><p><code>output/</code>: The generated static files (don’t edit these!).</p>
+</li>
+</ul>
+<h2>Your First Build</h2>
+<p>To generate your site using the default template, simply run:</p>
+<pre><code class="language-bash">./fddl
+</code></pre>
+<p>Or specify a template:</p>
+<pre><code class="language-bash">./fddl --template default
+</code></pre>
+<h2>Build System &amp; Versioning</h2>
+<p>Every site generation is automatically trackable. <code>fddl</code> generates a unique <strong>Build ID</strong> and captures the current <strong>Git Commit Hash</strong> to ensure you always know exactly which version of your code produced which version of your site.</p>
+<p>These variables are exposed via:</p>
+<ul>
+<li><p><code>805007B8-F201-45FC-8E1A-057A88AFA31E</code></p>
+</li>
+<li><p><code>1709cb6</code></p>
+</li>
+<li><p><code>Jan 17, 2026 at 11:21 PM</code></p>
+</li>
+</ul>
+<h2>Next Steps</h2>
+<ul>
+<li><p><a href="/docs/configuration.html">Configuration Guide</a></p>
+</li>
+<li><p><a href="/docs/shortcodes.html">Shortcodes Reference</a></p>
+</li>
+<li><p><a href="/docs/templates.html">Templating Engine</a></p>
+</li>
+</ul>
+
+                </div>
+
+                <footer class="doc-footer">
+                    
+                    <div class="doc-tags">
+                        <strong>Topics:</strong>
+                        
+                        <span class="tag">doc</span>
+                        
+                        <span class="tag">tutorial</span>
+                        
+                        <span class="tag">introduction</span>
+                        
+                    </div>
+                    
+
+                    <div class="doc-nav-links">
+                        <a href="/docs/" class="back-link">← Documentation Home</a>
+                    </div>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 fddl.</p>
+            <p>Generated by fddl build <a href="https://github.com/aviatorcards/fddl/commit/1709cb6">805007B8-F201-45FC-8E1A-057A88AFA31E</a></p>
+        </div>
+    </footer>
+</body>
+</html>
