@@ -6,32 +6,46 @@
     <description>A retro-modern website built with fddl</description>
     <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
-    <title>fddl</title>
-    <link>https://example.com/projects/fddl.html</link>
-    <description>A high-performance static site generator written in Swift.</description>
-    <pubDate>Tue, 30 Sep 2025 20:00:00 -0400</pubDate>
-    <guid>https://example.com/projects/fddl.html</guid>
+    <title>bethanyrhodes.com</title>
+    <link>https://example.com/projects/bethany-rhodes-com.html</link>
+    <description>The personal website of Bethany Rhodes.</description>
+    <pubDate>Sun, 18 Jan 2026 19:00:00 -0500</pubDate>
+    <guid>https://example.com/projects/bethany-rhodes-com.html</guid>
+</item>
+<item>
+    <title>Hello Real Cops</title>
+    <link>https://example.com/blog/hello-real-cops.html</link>
+    <description>Toying with putting real journal entries online again.</description>
+    <pubDate>Fri, 16 Jan 2026 19:00:00 -0500</pubDate>
+    <guid>https://example.com/blog/hello-real-cops.html</guid>
 </item>
 <item>
     <title>Swift-Powered Site Generation: The Technical Foundation</title>
     <link>https://example.com/blog/swift-powered-generation.html</link>
     <description>Exploring why Swift is an excellent choice for building a static site generator and the key dependencies that power fddl.</description>
-    <pubDate>Sat, 28 Dec 2024 19:00:00 -0500</pubDate>
+    <pubDate>Sun, 28 Dec 2025 19:00:00 -0500</pubDate>
     <guid>https://example.com/blog/swift-powered-generation.html</guid>
 </item>
 <item>
     <title>fddl Features: Shortcodes, Plugins, and More</title>
     <link>https://example.com/blog/features-and-capabilities.html</link>
     <description>A comprehensive look at fddl&apos;s features including shortcodes, plugins, the dev server, and the template system.</description>
-    <pubDate>Wed, 25 Dec 2024 19:00:00 -0500</pubDate>
+    <pubDate>Thu, 25 Dec 2025 19:00:00 -0500</pubDate>
     <guid>https://example.com/blog/features-and-capabilities.html</guid>
 </item>
 <item>
     <title>Introducing fddl: A Swift-Powered Static Site Generator</title>
     <link>https://example.com/blog/introducing-fddl.html</link>
     <description>Meet fddl, a markdown-based static site generator built with Swift as a learning journey with NotebookLM.</description>
-    <pubDate>Sat, 21 Dec 2024 19:00:00 -0500</pubDate>
+    <pubDate>Sun, 21 Dec 2025 19:00:00 -0500</pubDate>
     <guid>https://example.com/blog/introducing-fddl.html</guid>
+</item>
+<item>
+    <title>fddl</title>
+    <link>https://example.com/projects/fddl.html</link>
+    <description>A high-performance static site generator written in Swift.</description>
+    <pubDate>Tue, 30 Sep 2025 20:00:00 -0400</pubDate>
+    <guid>https://example.com/projects/fddl.html</guid>
 </item>
 </channel>
 </rss>

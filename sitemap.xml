@@ -6,15 +6,19 @@
 </url>
 <url>
     <loc>https://example.com/blog/features-and-capabilities.html</loc>
-    <lastmod>2026-01-18T04:02:51Z</lastmod>
+    <lastmod>2026-01-18T04:28:09Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/blog/hello-real-cops.html</loc>
+    <lastmod>2026-01-18T06:34:46Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/blog/introducing-fddl.html</loc>
-    <lastmod>2026-01-18T04:02:57Z</lastmod>
+    <lastmod>2026-01-18T04:28:22Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/blog/swift-powered-generation.html</loc>
-    <lastmod>2026-01-18T04:03:02Z</lastmod>
+    <lastmod>2026-01-18T04:28:17Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/contact.html</loc>
@@ -38,7 +42,7 @@
 </url>
 <url>
     <loc>https://example.com/features-demo.html</loc>
-    <lastmod>2026-01-18T04:00:23Z</lastmod>
+    <lastmod>2026-02-05T16:09:34Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/index.html</loc>
@@ -47,6 +51,10 @@
 <url>
     <loc>https://example.com/projects/atmosphere.html</loc>
     <lastmod>2026-01-18T04:21:19Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/projects/bethany-rhodes-com.html</loc>
+    <lastmod>2026-01-19T23:27:14Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/projects/fddl.html</loc>
@@ -58,10 +66,10 @@
 </url>
 <url>
     <loc>https://example.com/projects/rookery.html</loc>
-    <lastmod>2026-01-18T04:02:45Z</lastmod>
+    <lastmod>2026-02-05T16:10:47Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/projects/swiftmark.html</loc>
-    <lastmod>2026-01-18T04:02:39Z</lastmod>
+    <lastmod>2026-02-05T16:11:09Z</lastmod>
 </url>
 </urlset>
