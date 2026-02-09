@@ -41,11 +41,53 @@
     <guid>https://example.com/blog/introducing-fddl.html</guid>
 </item>
 <item>
+    <title>Rookery</title>
+    <link>https://example.com/projects/rookery.html</link>
+    <description>A Swift-based web application for managing code snippets with beautiful image generation powered by freeze</description>
+    <pubDate>Sat, 13 Dec 2025 19:00:00 -0500</pubDate>
+    <guid>https://example.com/projects/rookery.html</guid>
+</item>
+<item>
+    <title>SwiftMark: High Performance Markdown Processor</title>
+    <link>https://example.com/projects/swiftmark.html</link>
+    <description>A recursive descent markdown parser built for speed and extensibility.</description>
+    <pubDate>Sat, 13 Dec 2025 19:00:00 -0500</pubDate>
+    <guid>https://example.com/projects/swiftmark.html</guid>
+</item>
+<item>
+    <title>About</title>
+    <link>https://example.com/about.html</link>
+    <description>or: how depressed can one person be?</description>
+    <pubDate>Tue, 30 Sep 2025 20:00:00 -0400</pubDate>
+    <guid>https://example.com/about.html</guid>
+</item>
+<item>
+    <title>Contact</title>
+    <link>https://example.com/contact.html</link>
+    <description>Get in touch</description>
+    <pubDate>Tue, 30 Sep 2025 20:00:00 -0400</pubDate>
+    <guid>https://example.com/contact.html</guid>
+</item>
+<item>
+    <title>Atmosphere: Swift Journaling App</title>
+    <link>https://example.com/projects/atmosphere.html</link>
+    <description>A lightweight, high-performance journaling app powered by the SwiftMark Processor.</description>
+    <pubDate>Tue, 30 Sep 2025 20:00:00 -0400</pubDate>
+    <guid>https://example.com/projects/atmosphere.html</guid>
+</item>
+<item>
     <title>fddl</title>
     <link>https://example.com/projects/fddl.html</link>
     <description>A high-performance static site generator written in Swift.</description>
     <pubDate>Tue, 30 Sep 2025 20:00:00 -0400</pubDate>
     <guid>https://example.com/projects/fddl.html</guid>
+</item>
+<item>
+    <title>GitHub Projects</title>
+    <link>https://example.com/projects/github.html</link>
+    <description>Do you like cheese?</description>
+    <pubDate>Tue, 30 Sep 2025 20:00:00 -0400</pubDate>
+    <guid>https://example.com/projects/github.html</guid>
 </item>
 </channel>
 </rss>

@@ -1,128 +1,128 @@
 [
   {
-    "content" : "\n# About Me\n\nHey, I'm Tristan. I don't call myself anything because I don't like that. I spend my time trying to actively avoid interacting with capitalism in any way possible. My brain is pretty broken in the way that I vew the world comparitively to most people. I think people are deserving of food, shelter, housing, and access to healthcare. I can objectively see that capitalism is incompatible with any kind of prolonged existence for living beings. Infinite growth predicated on finite resour",
-    "tags" : "about, philosophy, swift",
+    "description" : "or: how depressed can one person be?",
+    "content" : "\nHey, I'm Tristan. I don't call myself anything because I don't like that. I spend my time trying to actively avoid interacting with capitalism in any way possible. My brain is pretty broken in the way that I vew the world comparitively to most people. I think people are deserving of food, shelter, housing, and access to healthcare. I can objectively see that capitalism is incompatible with any kind of prolonged existence for living beings. Infinite growth predicated on finite resources in a liv",
     "title" : "About",
-    "url" : "about.html",
-    "description" : "or: how depressed can one person be?"
+    "tags" : "about, philosophy, swift",
+    "url" : "about.html"
   },
   {
-    "title" : "fddl Features: Shortcodes, Plugins, and More",
-    "description" : "A comprehensive look at fddl's features including shortcodes, plugins, the dev server, and the template system.",
-    "content" : "\n# fddl Features and Capabilities\n\nfddl packs a surprising amount of functionality into a Swift-based static site generator; these features include shortcodes, plugins, the dev server, and the template system. A custom markdown processor (SwiftMark) is also included.\n\n## Shortcodes: Dynamic Content in Static Sites\n\nShortcodes let you embed rich content without writing HTML. fddl supports both modern and retro shortcodes. Think geocities, gopher, & gemini (not the AI)\n\n### Modern Shortcodes\n\nMode",
     "url" : "blog\/features-and-capabilities.html",
+    "content" : "\n# fddl Features and Capabilities\n\nfddl packs a surprising amount of functionality into a Swift-based static site generator; these features include shortcodes, plugins, the dev server, and the template system. A custom markdown processor (SwiftMark) is also included.\n\n## Shortcodes: Dynamic Content in Static Sites\n\nShortcodes let you embed rich content without writing HTML. fddl supports both modern and retro shortcodes. Think geocities, gopher, & gemini (not the AI)\n\n### Modern Shortcodes\n\nMode",
+    "description" : "A comprehensive look at fddl's features including shortcodes, plugins, the dev server, and the template system.",
+    "title" : "fddl Features: Shortcodes, Plugins, and More",
     "tags" : "features, shortcodes, plugins, templates"
   },
   {
-    "description" : "Toying with putting real journal entries online again.",
     "title" : "Hello Real Cops",
+    "content" : "\n# Real Journaling? Online? In 2026?!\n\nI've been toying with the idea of putting my real journal entries, or at least an edited version, online. Noticing that [Tahoe](https:\/\/www.apple.com\/os\/macos\/) comes with [Journal](https:\/\/apps.apple.com\/us\/app\/journal\/id6447391597), I'm starting to think it's possible for me to do this.\n\nMany, many years ago - say, around 2000 - I was in a band and we played with another band whose guitarist I got alone with for the duration of the show. He was also a pre",
+    "description" : "Toying with putting real journal entries online again.",
     "url" : "blog\/hello-real-cops.html",
-    "tags" : "personal, thoughts",
-    "content" : "\n# Real Journaling? Online? In 2026?!\n\nI've been toying with the idea of putting my real journal entries, or at least an edited version, online. Noticing that [Tahoe](https:\/\/www.apple.com\/os\/macos\/) comes with [Journal](https:\/\/apps.apple.com\/us\/app\/journal\/id6447391597), I'm starting to think it's possible for me to do this.\n\nMany, many years ago - say, around 2000 - I was in a band and we played with another band whose guitarist I got alone with for the duration of the show. He was also a pre"
+    "tags" : "personal, thoughts"
   },
   {
-    "tags" : "fddl, swift, static-sites, learning",
-    "title" : "Introducing fddl: A Swift-Powered Static Site Generator",
     "url" : "blog\/introducing-fddl.html",
     "description" : "Meet fddl, a markdown-based static site generator built with Swift as a learning journey with NotebookLM.",
-    "content" : "\n# Introducing fddl\n\nWelcome to **fddl**, a markdown-based static site generator written entirely in Swift. This project represents both a functional tool and a learning journey—built in conjunction with NotebookLM to explore Swift development.\n\n## What is fddl?\n\nfddl is a static site generator that transforms markdown files into beautiful, fast-loading HTML websites. It's designed for anyone who wants to publish content without the overhead of a database, server-side rendering, or complex deplo"
+    "content" : "\n# Introducing fddl\n\nWelcome to **fddl**, a markdown-based static site generator written entirely in Swift. This project represents both a functional tool and a learning journey—built in conjunction with NotebookLM to explore Swift development.\n\n## What is fddl?\n\nfddl is a static site generator that transforms markdown files into beautiful, fast-loading HTML websites. It's designed for anyone who wants to publish content without the overhead of a database, server-side rendering, or complex deplo",
+    "tags" : "fddl, swift, static-sites, learning",
+    "title" : "Introducing fddl: A Swift-Powered Static Site Generator"
   },
   {
-    "url" : "blog\/swift-powered-generation.html",
-    "content" : "\n# Swift-Powered Site Generation\n\nWhen most people think of Swift, they think of iOS apps. But Swift is a powerful, general-purpose language that excels at building developer tools, CLI applications, and—as fddl demonstrates—static site generators.\n\n## Why Swift for a Static Site Generator?\n\n### 1. Blazing Performance\n\nSwift is a compiled language with performance comparable to C++. For a static site generator that might process thousands of markdown files, this matters. While the difference mig",
+    "description" : "Exploring why Swift is an excellent choice for building a static site generator and the key dependencies that power fddl.",
     "tags" : "swift, architecture, dependencies, performance",
     "title" : "Swift-Powered Site Generation: The Technical Foundation",
-    "description" : "Exploring why Swift is an excellent choice for building a static site generator and the key dependencies that power fddl."
+    "content" : "\n# Swift-Powered Site Generation\n\nWhen most people think of Swift, they think of iOS apps. But Swift is a powerful, general-purpose language that excels at building developer tools, CLI applications, and—as fddl demonstrates—static site generators.\n\n## Why Swift for a Static Site Generator?\n\n### 1. Blazing Performance\n\nSwift is a compiled language with performance comparable to C++. For a static site generator that might process thousands of markdown files, this matters. While the difference mig",
+    "url" : "blog\/swift-powered-generation.html"
   },
   {
-    "title" : "Contact",
-    "tags" : "contact, social",
-    "content" : "\n# Get in Touch\n\nHave questions or comments? Have an idea for a feature? Submit a pull request!\n\n## Ways to Connect\n\n### Email\n\nThe best way to reach me is via email:\n\n**tristan@fddl.dev**\n\n### GitHub\n\nFind me on GitHub for code-related questions and contributions:\n\n**github.com\/aviatorcards**\n\n### Social Media\n\n- **Twitter**: @aviatorcards\n- **LinkedIn**: linkedin.com\/in\/tristan-6a160b3a2 **Note:** LinkedIn is a cesspool.\n- **Bluesky**: @fddl.dev\n\n## Found a Bug?\n\nNeat! I like bugs!\n\n**github.c",
     "url" : "contact.html",
+    "title" : "Contact",
+    "content" : "\n# Get in Touch\n\nHave questions or comments? Have an idea for a feature? Submit a pull request!\n\n## Ways to Connect\n\n### Email\n\nThe best way to reach me is via email:\n\n**tristan@fddl.dev**\n\n### GitHub\n\nFind me on GitHub for code-related questions and contributions:\n\n**github.com\/aviatorcards**\n\n### Social Media\n\n- **Twitter**: @aviatorcards\n- **LinkedIn**: linkedin.com\/in\/tristan-6a160b3a2 **Note:** LinkedIn is a cesspool.\n- **Bluesky**: @fddl.dev\n\n## Found a Bug?\n\nNeat! I like bugs!\n\n**github.c",
+    "tags" : "contact, social",
     "description" : "Get in touch"
   },
   {
-    "description" : "Master the settings that drive your site generation.",
-    "title" : "Configuration Reference",
     "url" : "docs\/configuration.html",
+    "description" : "Master the settings that drive your site generation.",
     "content" : "\n# Configuration\n\n`fddl` is designed to be \"zero-config\" by default, but it offers deep customization via YAML files.\n\n## YAML Frontmatter\n\nEvery markdown file in `contents\/` can include a YAML header blocked by `---`.\n\n```yaml\n---\ntitle: \"My Page\"\ndate: 2024-03-25\nlayout: post\ntags: [\"tag1\", \"tag2\"]\n---\n```\n\n## Template Configuration (`template.yml`)\n\nThe `template.yml` file in your template directory defines the site's structure and behavior.\n\n### Navigation\n\nThe `navigation` key defines the m",
-    "tags" : "doc, configuration, tutorial"
+    "tags" : "doc, configuration, tutorial",
+    "title" : "Configuration Reference"
   },
   {
+    "url" : "docs\/getting-started.html",
+    "tags" : "doc, tutorial, introduction",
     "title" : "Getting Started with fddl",
     "description" : "From zero to deployed in under five minutes.",
-    "content" : "\n# Getting Started\n\nWelcome to the documentation for **fddl**. This guide will help you set up your first static site.\n\n## Installation\n\nCurrently, `fddl` is distributed as a Swift package. You can build it from source:\n\n```bash\ngit clone https:\/\/github.com\/aviatorcards\/fddl.git\ncd fddl\nswift build -c release\n```\n\nThe executable will be located in `.build\/release\/fddl`.\n\n## Project Structure\n\nA typical `fddl` project looks like this:\n\n- `contents\/`: Your markdown files.\n- `templates\/`: Your HTML",
-    "tags" : "doc, tutorial, introduction",
-    "url" : "docs\/getting-started.html"
+    "content" : "\n# Getting Started\n\nWelcome to the documentation for **fddl**. This guide will help you set up your first static site.\n\n## Installation\n\nCurrently, `fddl` is distributed as a Swift package. You can build it from source:\n\n```bash\ngit clone https:\/\/github.com\/aviatorcards\/fddl.git\ncd fddl\nswift build -c release\n```\n\nThe executable will be located in `.build\/release\/fddl`.\n\n## Project Structure\n\nA typical `fddl` project looks like this:\n\n- `contents\/`: Your markdown files.\n- `templates\/`: Your HTML"
   },
   {
     "tags" : "doc, shortcodes, advanced",
-    "content" : "\n# Shortcodes\n\n`fddl` supports shortcodes to add dynamic or complex HTML content to your markdown files without writing HTML.\n\n## Basic Syntax\n\nShortcodes are wrapped in `{{< ... >}}` tags.\n\n- **Paired**: `{{< name >}}content{{< \/name >}}`\n- **Self-closing**: `{{< name params \/>}}` or `{{< name params >}}`\n\n## Available Shortcodes\n\n### YouTube\n\nEmbed a YouTube video.\n\n```markdown\n{{< youtube id=\"dQw4w9WgXcQ\" \/>}}\n```\n\n- `id`: The YouTube video ID.\n- `width`: (Optional) Width in pixels.\n- `height",
-    "title" : "Shortcodes Reference",
     "url" : "docs\/shortcodes.html",
-    "description" : "Enhance your markdown with dynamic shortcodes."
+    "description" : "Enhance your markdown with dynamic shortcodes.",
+    "title" : "Shortcodes Reference",
+    "content" : "\n# Shortcodes\n\n`fddl` supports shortcodes to add dynamic or complex HTML content to your markdown files without writing HTML.\n\n## Basic Syntax\n\nShortcodes are wrapped in `{{< ... >}}` tags.\n\n- **Paired**: `{{< name >}}content{{< \/name >}}`\n- **Self-closing**: `{{< name params \/>}}` or `{{< name params >}}`\n\n## Available Shortcodes\n\n### YouTube\n\nEmbed a YouTube video.\n\n```markdown\n{{< youtube id=\"dQw4w9WgXcQ\" \/>}}\n```\n\n- `id`: The YouTube video ID.\n- `width`: (Optional) Width in pixels.\n- `height"
   },
   {
-    "title" : "Templating Engine",
-    "tags" : "doc, templates, advanced",
-    "description" : "How to build and customize your own views.",
     "content" : "\n# Templating Engine\n\nThe `fddl` engine uses a custom-built, logic-light templating syntax inspired by Handlebars.\n\n## Variable Substitution\n\nVariables are wrapped in double curly braces: `{{variable}}`.\n\n### Page Variables (`page.`)\n\n- `{{page.title}}`: Page title from frontmatter or filename.\n- `{{page.content}}`: The rendered HTML of the page.\n- `{{page.description}}`: Meta description from frontmatter.\n- `{{page.date}}`: Formatted date (if provided in frontmatter).\n- `{{page.url}}`: The rela",
-    "url" : "docs\/templates.html"
+    "tags" : "doc, templates, advanced",
+    "url" : "docs\/templates.html",
+    "description" : "How to build and customize your own views.",
+    "title" : "Templating Engine"
   },
   {
-    "url" : "features-demo.html",
-    "description" : "A few things fddl can do.",
-    "tags" : "demo, features, geocities",
     "title" : "fddl Features",
-    "content" : "\nThis page demonstrates new features added to fddl.\n\n## Syntax Highlighting\n\nCheck out this Swift code with beautiful syntax highlighting:\n\n```swift\nstruct Person {\n    let name: String\n    var age: Int\n\n    func greet() {\n        print(\"Hello, my name is \\(name)!\")\n    }\n}\n\nlet person = Person(name: \"Web Developer\", age: 25)\nperson.greet()\n```\n\nAnd here's some JavaScript:\n\n```javascript\nfunction createAwesomeWebsite() {\n  const features = [\"live reload\", \"syntax highlighting\", \"themes\"];\n  feat"
+    "content" : "\nThis page demonstrates new features added to fddl.\n\n## Syntax Highlighting\n\nCheck out this Swift code with beautiful syntax highlighting:\n\n```swift\nstruct Person {\n    let name: String\n    var age: Int\n\n    func greet() {\n        print(\"Hello, my name is \\(name)!\")\n    }\n}\n\nlet person = Person(name: \"Name\", age: 20)\nperson.greet()\n```\n\nAnd here's some JavaScript:\n\n```javascript\nfunction createAwesomeWebsite() {\n  const features = [\"live reload\", \"syntax highlighting\", \"themes\"];\n  features.forE",
+    "tags" : "demo, features, geocities",
+    "description" : "A few things fddl can do.",
+    "url" : "features-demo.html"
   },
   {
-    "url" : "index.html",
-    "tags" : "",
     "content" : "\n## Welcome to fddl.dev\n\nThis is a personal homepage and demonstration of [fddl](https:\/\/github.com\/aviatorcards\/fddl), a static site generator crafted in Swift. Built with performance and simplicity in mind, fddl leverages Swift's compiled nature to deliver blazing-fast site generation. It features a custom markdown processor (SwiftMark), flexible shortcode system, plugin architecture, and modern templating—all while maintaining the simplicity of writing in plain Markdown. Perfect for blogs, do",
+    "url" : "index.html",
     "title" : "Fast Document Deployment Layer",
-    "description" : "A personal space for thoughts, projects, and structured chaos. Powered by fddl."
+    "description" : "A personal space for thoughts, projects, and structured chaos. Powered by fddl.",
+    "tags" : ""
   },
   {
-    "url" : "projects\/atmosphere.html",
-    "content" : "\n# Atmosphere\n\nAtmosphere is a lightweight, high-performance journaling app designed for speed and extensibility, built entirely in Swift.\n\n## SwiftMark Integration\n\nAt its core, Atmosphere leverages the **[SwiftMark Processor](\/projects\/swiftmark.html)**, a custom-built Markdown engine that provides real-time, high-fidelity rendering with minimal overhead.\n\n### Key Features\n\n- **Real-time Rendering**: Instant feedback as you type using the SwiftMark engine.\n- **Custom Extensions**: Easily exten",
     "tags" : "swift, text-editor, markdown",
-    "description" : "A lightweight, high-performance journaling app powered by the SwiftMark Processor.",
-    "title" : "Atmosphere: Swift Journaling App"
+    "title" : "Atmosphere: Swift Journaling App",
+    "content" : "\n# Atmosphere\n\nAtmosphere is a lightweight, high-performance journaling app designed for speed and extensibility, built with Swift.\n\n## SwiftMark Integration\n\nAt its core, Atmosphere leverages the **[SwiftMark Processor](\/projects\/swiftmark.html)**, a custom-built Markdown engine that provides real-time, high-fidelity rendering with minimal overhead.\n\n### Key Features\n\n- **Real-time Rendering**: Instant feedback as you type using the SwiftMark engine.\n- **Custom Extensions**: Easily extend the p",
+    "url" : "projects\/atmosphere.html",
+    "description" : "A lightweight, high-performance journaling app powered by the SwiftMark Processor."
   },
   {
-    "tags" : "open-source, eleventy, nunjucks, webdev, music",
     "title" : "bethanyrhodes.com",
-    "url" : "projects\/bethany-rhodes-com.html",
-    "content" : "\n# bethanyrhodes.com\n\n[bethanyrhodes.com](https:\/\/bethanyrhodes.com) is a modern, modular static website built for Bethany Rhodes. It serves as a central hub for her music, performances, and events.\n\n### Tech Stack\n\n- **[Eleventy (11ty)](https:\/\/www.11ty.dev\/)**: Flexible static site generator used for performance and modularity.\n- **[Nunjucks](https:\/\/nunjucks.dev\/)**: Templating engine for building complex, reusable layouts.\n- **Vanilla CSS**: Custom styling with CSS variables for a maintainab",
-    "description" : "The personal website of Bethany Rhodes."
+    "content" : "\n[bethanyrhodes.com](https:\/\/bethanyrhodes.com) is a modern, modular static website built for Bethany Rhodes. It serves as a central hub for her music, performances, and events.\n\n### Tech Stack\n\n- **[Eleventy (11ty)](https:\/\/www.11ty.dev\/)**: Flexible static site generator used for performance and modularity.\n- **[Nunjucks](https:\/\/nunjucks.dev\/)**: Templating engine for building complex, reusable layouts.\n- **Vanilla CSS**: Custom styling with CSS variables for a maintainable design system.\n- *",
+    "description" : "The personal website of Bethany Rhodes.",
+    "tags" : "open-source, eleventy, nunjucks, webdev, music",
+    "url" : "projects\/bethany-rhodes-com.html"
   },
   {
-    "title" : "fddl",
+    "tags" : "open-source, swift, static-sites, fddl",
     "url" : "projects\/fddl.html",
-    "content" : "\n# Fast Document Deployment Layer (fddl)\n\n**fddl** (pronounced \"fiddle\") is my personal static site generator, built entirely in Swift. It's the engine powering this very website.\n\n## Why build another SSG?\n\nWhile there are many excellent static site generators like Jekyll, Hugo, and Astro, I wanted something that combined:\n\n1.  **Swift Power**: Leveraging the speed and type safety of Swift for the build engine.\n2.  **Custom Markdown**: A processor (SwiftMark) that I can extend with custom short",
     "description" : "A high-performance static site generator written in Swift.",
-    "tags" : "open-source, swift, static-sites, fddl"
+    "content" : "\n# Fast Document Deployment Layer (fddl)\n\n**fddl** (pronounced \"fiddle\") is my personal static site generator, built entirely in Swift. It's the engine powering this very website.\n\n## Why build another SSG?\n\nWhile there are many excellent static site generators like Jekyll, Hugo, and Astro, I wanted something that combined:\n\n1.  **Swift Power**: Leveraging the speed and type safety of Swift for the build engine.\n2.  **Custom Markdown**: A processor (SwiftMark) that I can extend with custom short",
+    "title" : "fddl"
   },
   {
-    "description" : "Do you like cheese?",
-    "tags" : "open-source, projects",
     "title" : "GitHub Projects",
+    "url" : "projects\/github.html",
+    "tags" : "open-source, projects",
     "content" : "\n# Projects from GitHub\n\nA collection of open-source tools, experiments, and learning projects.\n\n## Featured Projects\n\n### fddl - Fast Document Deployment Layer\n\nA static site generator written in Swift, featuring a custom markdown processor (SwiftMark), flexible shortcode system, and plugin architecture.\n\n**Technologies**: Swift, SwiftNIO, Markdown  \n**Status**: Active Development\n[Learn More](\/projects\/fddl.html)\n[View Project](https:\/\/github.com\/aviatorcards\/fddl)\n[Documentation](\/docs\/index.",
-    "url" : "projects\/github.html"
+    "description" : "Do you like cheese?"
   },
   {
-    "tags" : "swift, vapor, open-source, web-application",
     "title" : "Rookery",
-    "url" : "projects\/rookery.html",
+    "description" : "A Swift-based web application for managing code snippets with beautiful image generation powered by freeze",
+    "tags" : "swift, vapor, open-source, web-application",
     "content" : "\n**A colony of code fragments**\n\nRookery is a modern Swift-based web application for managing code snippets. Think of it as your personal, local GitHub Gist focused on Swift's dynamic programming capabilities with built-in beautiful image generation.\n\n## Key Features\n\n- **Snippet Management**: Organize code fragments with metadata, tags, and search.\n- **Syntax Highlighting**: Beautiful code display using the [Splash](https:\/\/github.com\/JohnSundell\/Splash) library.\n- **Image Generation**: Create ",
-    "description" : "A Swift-based web application for managing code snippets with beautiful image generation powered by freeze"
+    "url" : "projects\/rookery.html"
   },
   {
-    "url" : "projects\/swiftmark.html",
-    "description" : "A recursive descent markdown parser built for speed and extensibility.",
-    "content" : "\nSwiftMark is the core parsing & processing library behind `fddl`. It's designed to handle complex markdown structures with minimal memory allocation.\n\n## Performance Benchmarks\n\nIn my latest tests, SwiftMark outperformed several existing C-based parsers when running on an Intel processor running macOS.\n\n- **SwiftMark**: 15,000 pages\/sec\n- **C-Mark (Ruby)**: 8,000 pages\/sec\n- **Red Carpet**: 10,500 pages\/sec\n\n## Key Features\n\n- **AST Generation**: Full control over the document tree.\n- **Strict ",
     "tags" : "swift, parsing, open-source",
-    "title" : "SwiftMark: High Performance Markdown Processor"
+    "url" : "projects\/swiftmark.html",
+    "title" : "SwiftMark: High Performance Markdown Processor",
+    "content" : "\nSwiftMark is the core parsing & processing library behind `fddl`. It's designed to handle complex markdown structures with minimal memory allocation.\n\n## Performance Benchmarks\n\nIn my latest tests, SwiftMark outperformed several existing C-based parsers when running on an Intel processor running macOS.\n\n- **SwiftMark**: 15,000 pages\/sec\n- **C-Mark (Ruby)**: 8,000 pages\/sec\n- **Red Carpet**: 10,500 pages\/sec\n\n## Key Features\n\n- **AST Generation**: Full control over the document tree.\n- **Strict ",
+    "description" : "A recursive descent markdown parser built for speed and extensibility."
   }
 ]

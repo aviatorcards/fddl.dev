@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://example.com/about.html</loc>
-    <lastmod>2026-01-18T04:03:29Z</lastmod>
+    <lastmod>2026-02-07T00:08:31Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/blog/features-and-capabilities.html</loc>
@@ -14,15 +14,15 @@
 </url>
 <url>
     <loc>https://example.com/blog/introducing-fddl.html</loc>
-    <lastmod>2026-01-18T04:28:22Z</lastmod>
+    <lastmod>2026-02-07T00:09:40Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/blog/swift-powered-generation.html</loc>
-    <lastmod>2026-01-18T04:28:17Z</lastmod>
+    <lastmod>2026-02-08T01:40:26Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/contact.html</loc>
-    <lastmod>2026-01-18T04:03:37Z</lastmod>
+    <lastmod>2026-02-07T00:08:39Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/docs/configuration.html</loc>
@@ -42,7 +42,7 @@
 </url>
 <url>
     <loc>https://example.com/features-demo.html</loc>
-    <lastmod>2026-02-05T16:09:34Z</lastmod>
+    <lastmod>2026-02-05T16:15:55Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/index.html</loc>
@@ -50,11 +50,11 @@
 </url>
 <url>
     <loc>https://example.com/projects/atmosphere.html</loc>
-    <lastmod>2026-01-18T04:21:19Z</lastmod>
+    <lastmod>2026-02-07T00:07:19Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/projects/bethany-rhodes-com.html</loc>
-    <lastmod>2026-01-19T23:27:14Z</lastmod>
+    <lastmod>2026-02-05T16:11:42Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/projects/fddl.html</loc>
@@ -62,14 +62,14 @@
 </url>
 <url>
     <loc>https://example.com/projects/github.html</loc>
-    <lastmod>2026-01-18T04:00:41Z</lastmod>
+    <lastmod>2026-02-07T00:08:33Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/projects/rookery.html</loc>
-    <lastmod>2026-02-05T16:10:47Z</lastmod>
+    <lastmod>2026-02-07T00:08:17Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/projects/swiftmark.html</loc>
-    <lastmod>2026-02-05T16:11:09Z</lastmod>
+    <lastmod>2026-02-07T00:08:48Z</lastmod>
 </url>
 </urlset>
