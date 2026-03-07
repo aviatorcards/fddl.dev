@@ -1,0 +1,12 @@
+{
+  "path" : "music\/starlight.md",
+  "frontMatter" : {
+    "title" : "Starlight",
+    "description" : "A journey through the digital cosmos. My latest electronic experiment.",
+    "layout" : "music",
+    "date" : "2026-03-02T00:00:00Z"
+  },
+  "modifiedDate" : "2026-03-03T03:40:42Z",
+  "content" : "<h2>About the Track<\/h2>\n<p><em>Starlight<\/em> was composed during a late-night session while staring at the skyline. I wanted to capture the feeling of infinite possibility that comes with the quiet of the night. It features modular synths, a driving bassline, and ethereal vocal pads.<\/p>\n<h3>Audio Preview<\/h3>\n<p>{{< audio src=“https:\/\/www.soundhelix.com\/examples\/mp3\/SoundHelix-Song-1.mp3” title=“Starlight (Radio Edit)” color=”#00f2ff” \/>}}<\/p>\n<h3>Streaming Now<\/h3>\n<p>{{< spotify id=“4cOdK2wGqyR7yv9P9nc0Yq” type=“track” \/>}}<\/p>\n<h3>Distribution Details<\/h3>\n<p>This track is distributed via <strong>DistroKid<\/strong> to all major platforms. If you’re a creator, feel free to use this in your videos with attribution!<\/p>\n<p><div class=\"alert alert-success\" style=\"padding: 1rem; margin: 1rem 0; background: #d4edda; color: #155724; border-left: 4px solid #155724; border-radius: 4px;\"><strong style=\"display: block; margin-bottom: 0.5rem;\">✅ Free Download<\/strong> Supporters on Bandcamp get a high-quality WAV download including the extended mix! <\/div><\/p>\n",
+  "rawMarkdown" : "\n## About the Track\n\n_Starlight_ was composed during a late-night session while staring at the skyline. I wanted to capture the feeling of infinite possibility that comes with the quiet of the night. It features modular synths, a driving bassline, and ethereal vocal pads.\n\n### Audio Preview\n\n{{< audio src=\"https:\/\/www.soundhelix.com\/examples\/mp3\/SoundHelix-Song-1.mp3\" title=\"Starlight (Radio Edit)\" color=\"#00f2ff\" \/>}}\n\n### Streaming Now\n\n{{< spotify id=\"4cOdK2wGqyR7yv9P9nc0Yq\" type=\"track\" \/>}}\n\n### Distribution Details\n\nThis track is distributed via **DistroKid** to all major platforms. If you're a creator, feel free to use this in your videos with attribution!\n\n{{< alert type=\"success\" title=\"Free Download\" >}}\nSupporters on Bandcamp get a high-quality WAV download including the extended mix!\n{{< \/alert >}}\n"
+}

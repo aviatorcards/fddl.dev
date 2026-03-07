@@ -6,6 +6,27 @@
     <description>A retro-modern website built with fddl</description>
     <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+    <title>StudioSync</title>
+    <link>https://example.com/blog/studiosync.html</link>
+    <description>StudioSync is a project</description>
+    <pubDate>Fri, 06 Mar 2026 19:00:00 -0500</pubDate>
+    <guid>https://example.com/blog/studiosync.html</guid>
+</item>
+<item>
+    <title>Starlight</title>
+    <link>https://example.com/music/starlight.html</link>
+    <description>A journey through the digital cosmos. My latest electronic experiment.</description>
+    <pubDate>Sun, 01 Mar 2026 19:00:00 -0500</pubDate>
+    <guid>https://example.com/music/starlight.html</guid>
+</item>
+<item>
+    <title>Moving to AlmaLinux</title>
+    <link>https://example.com/blog/almalinux.html</link>
+    <description>I&apos;m moving my server from Ubuntu to AlmaLinux.</description>
+    <pubDate>Wed, 25 Feb 2026 19:00:00 -0500</pubDate>
+    <guid>https://example.com/blog/almalinux.html</guid>
+</item>
+<item>
     <title>bethanyrhodes.com</title>
     <link>https://example.com/projects/bethany-rhodes-com.html</link>
     <description>The personal website of Bethany Rhodes.</description>

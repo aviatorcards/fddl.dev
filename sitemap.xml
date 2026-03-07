@@ -5,6 +5,10 @@
     <lastmod>2026-02-07T00:08:31Z</lastmod>
 </url>
 <url>
+    <loc>https://example.com/blog/almalinux.html</loc>
+    <lastmod>2026-02-26T21:36:50Z</lastmod>
+</url>
+<url>
     <loc>https://example.com/blog/features-and-capabilities.html</loc>
     <lastmod>2026-01-18T04:28:09Z</lastmod>
 </url>
@@ -15,6 +19,10 @@
 <url>
     <loc>https://example.com/blog/introducing-fddl.html</loc>
     <lastmod>2026-02-07T00:09:40Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/blog/studiosync.html</loc>
+    <lastmod>2026-03-07T11:58:56Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/blog/swift-powered-generation.html</loc>
@@ -49,8 +57,16 @@
     <lastmod>2026-01-18T00:02:15Z</lastmod>
 </url>
 <url>
+    <loc>https://example.com/music/index.html</loc>
+    <lastmod>2026-03-03T03:40:48Z</lastmod>
+</url>
+<url>
+    <loc>https://example.com/music/starlight.html</loc>
+    <lastmod>2026-03-03T03:40:42Z</lastmod>
+</url>
+<url>
     <loc>https://example.com/projects/atmosphere.html</loc>
-    <lastmod>2026-02-07T00:07:19Z</lastmod>
+    <lastmod>2026-02-08T01:42:57Z</lastmod>
 </url>
 <url>
     <loc>https://example.com/projects/bethany-rhodes-com.html</loc>

@@ -1,0 +1,17 @@
+{
+  "path" : "blog\/almalinux.md",
+  "frontMatter" : {
+    "title" : "Moving to AlmaLinux",
+    "description" : "I'm moving my server from Ubuntu to AlmaLinux.",
+    "layout" : "post",
+    "tags" : [
+      "linux",
+      "server",
+      "migration"
+    ],
+    "date" : "2026-02-26T00:00:00Z"
+  },
+  "modifiedDate" : "2026-02-26T21:36:50Z",
+  "content" : "<p>The last few days I’ve been working on moving my server from Ubuntu to AlmaLinux. I’ve been using Ubuntu for a few years now, and I’ve been pretty happy with it, but I’ve been wanting to move to something more stable and long-term. AlmaLinux is a great choice for this, as it’s a community-driven, enterprise-grade Linux distribution that’s based on Red Hat Enterprise Linux. It’s, of course, free and open-source.<\/p>\n<p>Ubuntu is fine, but I’ve never enjoyed the corporate aspect of it. I don’t really enjoy that Alma is based on RHEL, but it’s a much better alternative to CentOS, which is no longer community-driven. At least AlmaLinux is community-driven and will continue to be for the foreseeable future. Along with others like Rocky and, uh….I’m sure there are others.<\/p>\n<p><figure style=\"text-align: center;\"><img src=\"\/assets\/images\/alma.png\" alt=\"compiling Rookery\" width=\"600\" \/><figcaption>Compiling Rookery on AlmaLinux<\/figcaption><\/figure><\/p>\n<p>Looks like Swift runs on AlmaLinux just fine. At least <a href=\"https:\/\/github.com\/aviatorcards\/rookery\">Rookery<\/a> does. Cockpit works great, obviously. I have a weird issue with my ISP that doesn’t allow to remote in easily, but I can use cockpit to manage my home network when I’m away.<\/p>\n",
+  "rawMarkdown" : "\nThe last few days I've been working on moving my server from Ubuntu to AlmaLinux. I've been using Ubuntu for a few years now, and I've been pretty happy with it, but I've been wanting to move to something more stable and long-term. AlmaLinux is a great choice for this, as it's a community-driven, enterprise-grade Linux distribution that's based on Red Hat Enterprise Linux. It's, of course, free and open-source.\n\nUbuntu is fine, but I've never enjoyed the corporate aspect of it. I don't really enjoy that Alma is based on RHEL, but it's a much better alternative to CentOS, which is no longer community-driven. At least AlmaLinux is community-driven and will continue to be for the foreseeable future. Along with others like Rocky and, uh....I'm sure there are others.\n\n{{< image src=\"\/assets\/images\/alma.png\" alt=\"compiling Rookery\" caption=\"Compiling Rookery on AlmaLinux\" width=\"600\" align=\"center\" \/>}}\n\nLooks like Swift runs on AlmaLinux just fine. At least [Rookery](https:\/\/github.com\/aviatorcards\/rookery) does. Cockpit works great, obviously. I have a weird issue with my ISP that doesn't allow to remote in easily, but I can use cockpit to manage my home network when I'm away.\n"
+}
