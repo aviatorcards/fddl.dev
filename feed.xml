@@ -6,6 +6,13 @@
     <description>A retro-modern website built with fddl</description>
     <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+    <title>Rocky Linux??</title>
+    <link>https://example.com/blog/rockylinux.html</link>
+    <description>Goddamn failing hard drive.</description>
+    <pubDate>Thu, 12 Mar 2026 20:00:00 -0400</pubDate>
+    <guid>https://example.com/blog/rockylinux.html</guid>
+</item>
+<item>
     <title>StudioSync</title>
     <link>https://example.com/blog/studiosync.html</link>
     <description>StudioSync is a project</description>

@@ -1,0 +1,17 @@
+{
+  "path" : "blog\/rockylinux.md",
+  "content" : "<h1>Rocky Linux??<\/h1>\n<p>So I’ve enjoyed Alma. But I logged into cockpit the other day and it was telling me that I had a failing hard drive.<\/p>\n<p><figure style=\"text-align: center;\"><img src=\"\/assets\/images\/failure.png\" alt=\"failing hard drive\" width=\"600\" \/><figcaption>Failing hard drive<\/figcaption><\/figure><\/p>\n<p>I was running FreeBSD on this little ThinkCentre I got for 40 bucks with 16 gigs of ram. I feel like this would go for 200 dollars now. Keeping Alma on the laptop and as the dev environment until the drive croaks. The environment is on another hard drive, so nothing will actually be lost. Rad.<\/p>\n<p><figure style=\"text-align: center;\"><img src=\"\/assets\/images\/rocky.png\" alt=\"rocky linux\" width=\"600\" \/><figcaption>Rocky Linux<\/figcaption><\/figure><\/p>\n<p>So far, so good.<\/p>\n",
+  "rawMarkdown" : "\n# Rocky Linux??\n\nSo I've enjoyed Alma. But I logged into cockpit the other day and it was telling me that I had a failing hard drive.\n\n{{< image src=\"\/assets\/images\/failure.png\" alt=\"failing hard drive\" caption=\"Failing hard drive\" width=\"600\" align=\"center\" \/>}}\n\nI was running FreeBSD on this little ThinkCentre I got for 40 bucks with 16 gigs of ram. I feel like this would go for 200 dollars now. Keeping Alma on the laptop and as the dev environment until the drive croaks. The environment is on another hard drive, so nothing will actually be lost. Rad.\n\n{{< image src=\"\/assets\/images\/rocky.png\" alt=\"rocky linux\" caption=\"Rocky Linux\" width=\"600\" align=\"center\" \/>}}\n\nSo far, so good.\n",
+  "frontMatter" : {
+    "layout" : "post",
+    "title" : "Rocky Linux??",
+    "description" : "Goddamn failing hard drive.",
+    "date" : "2026-03-13T00:00:00Z",
+    "tags" : [
+      "linux",
+      "server",
+      "migration"
+    ]
+  },
+  "modifiedDate" : "2026-03-13T19:12:49Z"
+}
